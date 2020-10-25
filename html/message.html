@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/message.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/underscore@1.11.0/underscore-min.js"></script>
+        <script src="../js/framework/backbone-min.js"></script>
+        <script src ="../js/messageApp//model.js"></script>
+        <script src ="../js/messageApp//util.js"></script>
+        <script src ="../js/messageApp//template.js"></script>
+        <script src ="../js/messageApp//view.js"></script>
+        <script src ="../js/messageApp//init.js"></script>
+        <script>
+            $(window).resize(function(){
+                $(".headerArea").width($(".Container").width()-30);
+                $(".parentContainer").css("height", 0.95*$(window).height());
+            });
+        </script>
+    </head>
+    <body onload = messageApp.loadPosts(true) style="overflow: hidden;">
+        <div class="headerArea">
+            <span class="box-shadow-menu">
+            </span>              
+            <span class="messageTxt">Messages</span>
+        </div>
+        <div class="parentContainer">
+            <div class="Container" style="overflow-y: auto !important;" onscroll=messageApp.loadPosts() ></div>
+        </div>
+    </body>
+</html>

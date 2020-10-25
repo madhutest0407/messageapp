@@ -1,0 +1,94 @@
+.headerArea{
+        padding-bottom: 0.125em;
+        overflow: hidden;
+        border-style:solid;
+        border-color:rgba(110, 24, 189, 0);
+        background-color:rgba(110, 24, 189, 0.75);
+        padding-right:1.5em;
+        height:40px;
+        color: white;
+}    
+.outerDiv {
+    padding-bottom: 0.625em;
+    padding-left: 3.125em;
+    padding-top: 1.25em;
+    padding-right: 1.875em;
+    margin: 1.25em 1.25em 1.25em 1.25em;
+    background-color: white;
+    box-shadow: 0em 0em 0.125em 0.125em lightgrey;
+}
+.authorName{
+    text-align: justify;
+    margin-top: -3.0625em;
+    margin-left: 3.125em;
+}
+.timeClass{
+    margin-left:3.9em;
+}
+.timeheader{
+    margin-top:0.5em;
+    padding-bottom:0.2em;
+}
+.content{
+    word-wrap: break-word;
+    max-width: 1500px;
+    word-break: break-word;
+    text-align:justify;
+    margin-top:1em;
+}
+.parentContainer{
+    position: relative;
+}
+.Container{
+    height:100%;
+    background-color: #d0cccc30;
+}
+
+.box-shadow-menu {
+    position: relative;
+    padding-left: 1.25em;
+    font-size: 20px;
+    margin-left:0.625em;
+}
+  .box-shadow-menu:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.7em;
+    width: 1em;
+    height: 0.15em;
+    background: white;
+    box-shadow: 
+      0 0.25em 0 0 white,
+      0 0.5em 0 0 white;
+  }
+  .messageTxt{
+    font-size: 20px; 
+    top:1em;
+    position: absolute;
+    left:3em;
+  }
+  .imageCss {
+    border-radius: 4.68em;
+    width: 50px;
+    height: 50px;
+    margin-top: 0.31em;
+    margin-left: -0.875em;
+  }
+
+.actionBar {
+    float: left;
+    background: #da2c2c;
+    margin-left: -2em;
+    display: none;
+    margin-right:1em;
+    border-radius:0.6em;
+    color: white;
+    writing-mode: tb;
+    text-align: justify;
+}
+
+.del{
+    text-align: center;
+    margin-right: 0.95rem;
+}
